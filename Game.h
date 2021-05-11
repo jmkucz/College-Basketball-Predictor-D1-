@@ -295,16 +295,18 @@ public:
         "Howard") {
         homeConference = "MEAC";
         }
-        else if (home.name == "Northern Iowa	3-1	--	14-2
-        Bradley	3 - 1	--	12 - 5
-        Loyola Chicago	3 - 1	--	11 - 6
-        Drake	2 - 2	1	12 - 5
-        Indiana State	2 - 2	1	9 - 6
+        else if (home.name == "Northern Iowa",
+        "Bradley",
+        "Loyola Chicago",
+        "Drake",
+        "Indiana State",
         "Valparaiso",
         "Missouri State",
         "Southern Illinois",
         "Illinois State",
-        "Evansville")
+        "Evansville") {
+        homeConference = "MISSOURI";
+        }
     }
 
     void setScores() {
@@ -838,6 +840,7 @@ public:
             home.oppThreePercentage > .38) {
             return 2;
         }
+        return 0;
     }
 
 
