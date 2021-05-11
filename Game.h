@@ -840,6 +840,7 @@ public:
             home.oppThreePercentage > .38) {
             return 2;
         }
+        //needed return statement
         return 0;
     }
 
